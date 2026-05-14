@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert Court — Azure DevOps Engineer</title>
+  <meta name="description" content="Robert Court — Azure DevOps Engineer specialising in secure, automated cloud platforms for regulated industries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================================================================
+       HERO
+       ================================================================ -->
+  <header class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-glow"></div>
+    <div class="hero-inner">
+
+      <div class="hero-avatar-wrap">
+        <img src="profile.jpeg" alt="Robert Court" class="hero-avatar" />
+      </div>
+
+      <div class="hero-copy">
+        <span class="hero-badge">Azure DevOps Engineer</span>
+        <h1 class="hero-name">Robert Court</h1>
+        <p class="hero-tagline">
+          Building secure, automated cloud platforms for regulated industries.
+        </p>
+        <div class="hero-actions">
+          <a href="https://www.linkedin.com/in/robert-court-177780175/" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/rcourt1" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:rcourt2000@gmail.com" class="btn btn--ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="Robert Court CV.pdf" download class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================================================================
+       TAB NAVIGATION
+       ================================================================ -->
+  <nav class="tabs-nav" id="tabsNav" aria-label="Portfolio sections">
+    <div class="tabs-inner">
+      <button class="tab-btn active" data-tab="summary" aria-selected="true">Summary</button>
+      <button class="tab-btn" data-tab="skills" aria-selected="false">Skills</button>
+      <button class="tab-btn" data-tab="projects" aria-selected="false">Projects</button>
+      <button class="tab-btn" data-tab="experience" aria-selected="false">Experience</button>
+      <span class="tab-indicator" id="tabIndicator" aria-hidden="true"></span>
+    </div>
+  </nav>
+
+  <!-- ================================================================
+       MAIN CONTENT
+       ================================================================ -->
+  <main class="main">
+
+    <!-- ── SUMMARY ────────────────────────────────────────────────── -->
+    <section class="tab-panel active" id="summary" role="tabpanel" aria-label="Summary">
+      <div class="panel-inner">
+        <div class="summary-grid">
+
+          <div class="summary-about">
+            <p class="section-label">About Me</p>
+            <p class="body-text">
+              I'm an Azure DevOps engineer specialising in secure, automated cloud platforms.
+              My primary stack is <span class="hl">Azure</span>,
+              <span class="hl">Terraform</span>, and <span class="hl">CI/CD</span> —
+              GitHub Actions and Azure DevOps. I support regulated financial services clients,
+              including the <span class="hl">Bank of England</span>.
+            </p>
+            <p class="body-text">
+              Outside of work, I build side projects to keep learning. Right now that means
+              a Muay Thai fight tracker, AI ethics experiments with the Perplexity API,
+              a social media scheduling app, and a quiz game built with the Claude API.
+            </p>
+          </div>
+
+          <div class="summary-highlights">
+            <p class="section-label">Highlights</p>
+            <div class="highlight-cards">
+
+              <div class="highlight-card">
+                <span class="highlight-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+                </span>
+                <div>
+                  <p class="hl-label">Cloud Platform</p>
+                  <p class="hl-value">Microsoft Azure</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <span class="highlight-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg>
+                </span>
+                <div>
+                  <p class="hl-label">Key Client</p>
+                  <p class="hl-value">Bank of England</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <span class="highlight-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </span>
+                <div>
+                  <p class="hl-label">Primary IaC</p>
+                  <p class="hl-value">Terraform</p>
+                </div>
+              </div>
+
+              <div class="highlight-card">
+                <span class="highlight-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                </span>
+                <div>
+                  <p class="hl-label">Focus Area</p>
+                  <p class="hl-value">Regulated Environments</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────────────── -->
+    <section class="tab-panel" id="skills" role="tabpanel" aria-label="Skills">
+      <div class="panel-inner">
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h2 class="skill-group-title">
+              <span class="skill-group-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+              </span>
+              Cloud &amp; Infrastructure
+            </h2>
+            <div class="skill-tags">
+              <span class="tag">Microsoft Azure</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Azure App Service</span>
+              <span class="tag">Azure Key Vault</span>
+              <span class="tag">Azure Virtual Networks</span>
+              <span class="tag">Azure Storage</span>
+              <span class="tag">Azure Monitor</span>
+              <span class="tag">Azure Policy</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h2 class="skill-group-title">
+              <span class="skill-group-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+              </span>
+              CI/CD &amp; Automation
+            </h2>
+            <div class="skill-tags">
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Azure DevOps Pipelines</span>
+              <span class="tag">GitOps</span>
+              <span class="tag">Infrastructure as Code</span>
+              <span class="tag">Pipeline Automation</span>
+              <span class="tag">Agile Methodologies</span>
+              <span class="tag">Release Management</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h2 class="skill-group-title">
+              <span class="skill-group-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+              </span>
+              Security &amp; Compliance
+            </h2>
+            <div class="skill-tags">
+              <span class="tag">DevSecOps</span>
+              <span class="tag">Wiz.io</span>
+              <span class="tag">Regulated Environments</span>
+              <span class="tag">Financial Services Compliance</span>
+              <span class="tag">National Security Vetting</span>
+              <span class="tag">Secrets Management</span>
+              <span class="tag">Zero-Trust Networking</span>
+              <span class="tag">Azure Defender</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h2 class="skill-group-title">
+              <span class="skill-group-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+              </span>
+              Languages &amp; Tools
+            </h2>
+            <div class="skill-tags">
+              <span class="tag">HCL (Terraform)</span>
+              <span class="tag">YAML</span>
+              <span class="tag">Bash</span>
+              <span class="tag">PowerShell</span>
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Git</span>
+              <span class="tag">JIRA</span>
+              <span class="tag">Atlassian Suite</span>
+            </div>
+          </div>
+
+          <div class="skill-group skill-group--wide">
+            <h2 class="skill-group-title">
+              <span class="skill-group-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </span>
+              Certifications
+            </h2>
+            <div class="skill-tags">
+              <span class="tag tag--cert">AZ-900 · Microsoft Azure Fundamentals</span>
+              <span class="tag tag--cert">Cisco Cyber Threat Management</span>
+              <span class="tag tag--cert">Level 3 Diploma · Business Administration</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────────────────── -->
+    <section class="tab-panel" id="projects" role="tabpanel" aria-label="Projects">
+      <div class="panel-inner">
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-status status--wip">In Progress</span>
+              <a href="#" class="project-ext-link" aria-label="View Muay Thai Fight Tracker">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Muay Thai Fight Tracker</h3>
+            <p class="project-desc">
+              A website to track Muay Thai news and upcoming fights.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag--sm">Perplexity API</span>
+              <span class="tag tag--sm">JavaScript</span>
+              <span class="tag tag--sm">Web App</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-status status--wip">In Progress</span>
+              <a href="#" class="project-ext-link" aria-label="View AI Ethics Explorer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">AI Ethics Explorer</h3>
+            <p class="project-desc">
+              Experimenting with the Perplexity API to explore AI behaviour and ethical responses.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag--sm">Perplexity API</span>
+              <span class="tag tag--sm">AI Research</span>
+              <span class="tag tag--sm">Python</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-status status--wip">In Progress</span>
+              <a href="#" class="project-ext-link" aria-label="View Content Scheduler">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Content Scheduler</h3>
+            <p class="project-desc">
+              A social media scheduling app prototype, inspired by friends who create content.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag--sm">JavaScript</span>
+              <span class="tag tag--sm">Social API</span>
+              <span class="tag tag--sm">Prototype</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-status status--wip">In Progress</span>
+              <a href="#" class="project-ext-link" aria-label="View Claude Quiz Game">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">Claude Quiz Game</h3>
+            <p class="project-desc">
+              A quiz game built with the Claude API — created for fun.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag--sm">Claude API</span>
+              <span class="tag tag--sm">JavaScript</span>
+              <span class="tag tag--sm">Game</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-status status--shipped">Shipped</span>
+              <a href="https://rcourt1.github.io" class="project-ext-link" aria-label="View this portfolio" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+            <h3 class="project-title">This Portfolio</h3>
+            <p class="project-desc">
+              A minimalist, responsive GitHub Pages portfolio — built with vanilla HTML, CSS,
+              and JavaScript. No frameworks, no build step.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag--sm">HTML</span>
+              <span class="tag tag--sm">CSS</span>
+              <span class="tag tag--sm">JavaScript</span>
+              <span class="tag tag--sm">GitHub Pages</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ─────────────────────────────────────────────── -->
+    <section class="tab-panel" id="experience" role="tabpanel" aria-label="Experience">
+      <div class="panel-inner">
+        <div class="timeline">
+
+          <!-- Role 1 — Current -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Associate Azure DevOps Engineer</h3>
+                  <p class="timeline-company"><a href="https://www.version1.com/" target="_blank" rel="noopener noreferrer">Version 1</a> · Financial Services</p>
+                </div>
+                <span class="timeline-date">Aug 2023 – Present</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>Bank of England (Jan 2024 – Present)</strong> — Remediating broken workflows and stabilising a Cloud platform in preparation for migration to a new Azure Cloud Platform.</li>
+                <li>Configured and deployed an Azure Function App via Terraform to automate credential rotation for all critical Bank of England applications.</li>
+                <li>Utilised Wiz.io to locate vulnerable resources and implemented patching across all BoE applications.</li>
+                <li>Automated CI/CD processes and pipelines with GitHub Actions.</li>
+                <li><strong>Version 1 Internal Project (Oct – Dec 2023)</strong> — Automated deployment of an AWS-based document approval application built by the Version 1 Software Development team.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag--sm">Azure</span>
+                <span class="tag tag--sm">Terraform</span>
+                <span class="tag tag--sm">GitHub Actions</span>
+                <span class="tag tag--sm">Wiz.io</span>
+                <span class="tag tag--sm">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot--past"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Business Support Admin</h3>
+                  <p class="timeline-company"><a href="https://www.version1.com/" target="_blank" rel="noopener noreferrer">Version 1</a></p>
+                </div>
+                <span class="timeline-date">Mar 2023 – Jul 2023</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Supported the Version 1 acquisition of Automation Logic, integrating Automation Logic assets into Version 1's IT infrastructure.</li>
+                <li>Provided business support to Version 1 Bids and Proposals covering Automation Logic's contract extensions and ongoing bids.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot--past"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Sales Operations Admin</h3>
+                  <p class="timeline-company">Automation Logic</p>
+                </div>
+                <span class="timeline-date">Jan 2022 – Mar 2023</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Client billing, contract reviewing and invoice payments.</li>
+                <li>Supporting bid proposals and sending contracts for signature.</li>
+                <li>Asset management of Automation Logic's business contracts with Vodafone, Apple and Dell.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot--past"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Business Admin Apprentice</h3>
+                  <p class="timeline-company">Automation Logic</p>
+                </div>
+                <span class="timeline-date">Jan 2021 – Jan 2022</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Level 3 Business Administration Apprenticeship.</li>
+                <li>Experian BPSS checks and process creation for National Security Vetting (MoD).</li>
+                <li>On-boarding and off-boarding employees, providing access across all internal platforms.</li>
+                <li>Internal expense management for all billable and non-billable expenses.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag--sm">Level 3 Business Admin</span>
+                <span class="tag tag--sm">National Security Vetting</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer">
+    <p>Built with HTML, CSS &amp; JS &middot; Hosted on GitHub Pages</p>
+    <p>&copy; 2025 Robert Court &middot; <a href="https://github.com/rcourt1" target="_blank" rel="noopener noreferrer">github.com/rcourt1</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
