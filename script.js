@@ -27,11 +27,14 @@ function switchTab(targetId, activeBtn) {
   activeBtn.setAttribute('aria-selected', 'true');
   moveIndicator(activeBtn);
 
-  /* Force animation restart on the incoming panel */
+  /* Force panel animation restart */
   nextPanel.style.animation = 'none';
-  nextPanel.offsetHeight;           /* reflow */
+  nextPanel.offsetHeight;
   nextPanel.style.animation = '';
   nextPanel.classList.add('active');
+
+  /* Trigger reveal animations for newly visible elements */
+  revealInPanel(nextPanel);
 }
 
 tabBtns.forEach(btn => {
@@ -61,3 +64,39 @@ const heroObserver = new IntersectionObserver(
 );
 
 heroObserver.observe(hero);
+
+/* ================================================================
+   SCROLL REVEAL
+   ================================================================ */
+const REVEAL_SELECTORS = [
+  '.highlight-card',
+  '.skill-group',
+  '.project-card',
+  '.timeline-item',
+];
+
+/* Mark all reveal targets */
+document.querySelectorAll(REVEAL_SELECTORS.join(', ')).forEach(el => {
+  el.classList.add('reveal');
+});
+
+/* Reveal elements inside a specific panel */
+function revealInPanel(panel) {
+  panel.querySelectorAll('.reveal:not(.revealed)').forEach((el, i) => {
+    setTimeout(() => el.classList.add('revealed'), i * 70);
+  });
+}
+
+/* IntersectionObserver for the initial (Summary) panel */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('#summary .reveal').forEach(el => {
+  revealObserver.observe(el);
+});

@@ -12,6 +12,7 @@
   --bg-card:         #161b22;
   --bg-hover:        #1c2128;
   --accent:          #00b4d8;
+  --font-display:    'Space Grotesk', system-ui, sans-serif;
   --accent-soft:     rgba(0, 180, 216, 0.10);
   --accent-glow:     rgba(0, 180, 216, 0.22);
   --accent-border:   rgba(0, 180, 216, 0.35);
@@ -869,5 +870,81 @@ img { max-width: 100%; display: block; }
   .timeline-header {
     flex-direction: column;
     gap: 6px;
+  }
+}
+
+/* ================================================================
+   SPACE GROTESK — display headings
+   ================================================================ */
+.hero-name,
+.hero-badge,
+.skill-group-title,
+.timeline-role,
+.project-title,
+.section-label,
+.hl-label,
+.hl-value {
+  font-family: var(--font-display);
+}
+
+/* ================================================================
+   CURSOR — all interactive elements
+   ================================================================ */
+.tag,
+.highlight-card,
+.project-detail-summary,
+.tab-btn,
+.btn {
+  cursor: pointer;
+}
+
+/* ================================================================
+   FOCUS STATES — keyboard navigation
+   ================================================================ */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.tab-btn:focus-visible {
+  outline-offset: -3px;
+}
+
+/* ================================================================
+   SCROLL REVEAL — elements animate in when visible
+   ================================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for sibling groups */
+.reveal:nth-child(2) { transition-delay: 0.07s; }
+.reveal:nth-child(3) { transition-delay: 0.14s; }
+.reveal:nth-child(4) { transition-delay: 0.21s; }
+.reveal:nth-child(5) { transition-delay: 0.28s; }
+
+/* ================================================================
+   PREFERS-REDUCED-MOTION — respect system preference
+   ================================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }
